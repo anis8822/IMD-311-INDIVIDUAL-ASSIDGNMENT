@@ -1,0 +1,109 @@
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bg {
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+/* Top right text */
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+/* Bottom right text */
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+/* Centered text */
+.centered {
+  font-size: 110px;
+  position: absolute;
+  top: 20%;
+  left: 30%;
+  transform: translate(-15%, 85%);
+  color: black;
+  font-family:sans serif
+}
+
+* {box-sizing: border-box;}
+
+.container {
+  position: relative;
+  width: 100%;
+  padding-top:80px;
+}
+
+.image {
+  display: block;
+  width: 30%;
+  height: 70%;
+}
+
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.fam {
+	display: block;
+	margin: auto;
+	padding-left: 35px;
+	padding-right: 35px;
+	padding-top:15px;
+	padding-bottom: 50px;
+}
+
+h1, h3 
+{
+position: absolute;
+text-align: center;
+}
+
+h2 {text-align: center;font-size: 6s0px;}
+
+
+ .audio-container {
+  display: flex;
+  justify-content: center;
+  align-items: center 
+}
+
+h4 {text-align: center;font-size: 2s0px;}
